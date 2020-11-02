@@ -1,4 +1,4 @@
-* Delayed Poweroff *
+# Delayed Poweroff
 
 This script is designed to be part of a system that will 'catch' power button presses (or other poweroff events) and replace them with a delayed halt instead (to hopefully better preserve the underlying filesystems).
 

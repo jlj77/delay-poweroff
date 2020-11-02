@@ -1,0 +1,13 @@
+[Unit]
+Description=Run custom task at poweroff
+DefaultDependencies=no
+Before=poweroff.target
+Requires=poweroff.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/xterm -e /usr/local/bin/delay-poweroff.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
